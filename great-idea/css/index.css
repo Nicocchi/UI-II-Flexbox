@@ -63,4 +63,223 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 876px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 85px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+header {
+	width: 876px;
+	height: 60px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* Flex container */
+.main-nav {
+	width: 700px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-nav a {
+	text-decoration: none;
+	color: #bcbcbc;
+	display: flex;
+	padding: 20px 20px 20px 0;
+}
+
+header .logo {
+	display: flex;
+	width: 183px;
+	height: 36px;
+	justify-content: flex-end;
+	align-self: center;
+	margin-left: 70px;
+}
+
+/* cta */
+.cta {
+	display: flex;
+	flex-direction: row;
+}
+.cta .cta-text {
+	vertical-align: top;
+	font-size: 77px;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 90px;
+	display: flex;
+	flex-direction: column;
+}
+
+.cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 50px;
+	width: 200px;
+	font-size: 17px;
+	border: 1px solid black;
+	cursor: pointer;
+	display: flex;
+	align-self: center;
+}
+
+.cta .cta-text button:hover {
+	background: black;
+	color: white;
+}
+
+.cta img {
+	display: flex;
+	margin-top: 69px;
+	}
+
+.main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+}
+
+.main-content .top-content {
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.main-content .top-content .text-content {
+	width: 410px;
+	margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+	margin-right: 0;
+}
+
+.main-content .middle-img {
+	margin-top: 45px;
+}
+
+.main-content .bottom-content {
+	margin-top: 37px;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.main-content .bottom-content .text-content {
+	width: 275px;
+	margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+	margin-right: 0;
+}
+
+.contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+}
+
+.contact p {
+	margin: 20px 0;
+}
+
+footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* Services */
+.services-cta {
+	margin-top: 20px;
+}
+
+.services-main-content {
+	margin-top: 40px;
+}
+
+.services-main-content .middle-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.services-main-content .middle-content .box-content {
+	width: 400px;
+	background: #f4f3f4;
+	padding: 20px;
+	margin-top: 40px;
+	border: 1px solid black;
+}
+
+.services-main-content .middle-content .box-content p{
+	margin-bottom: 20px;
+}
+
+.services-main-content .middle-content button {
+	background: white;
+	margin-top: 6px;
+	width: 120px;
+	padding: 8px 10px;
+	font-size: 0.8em;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.services-main-content .middle-content button:hover {
+	background: black;
+	color: white;
+}
+
+.facts {
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid black;
+	margin: 30px 0 100px 0;
+}
+
+.facts .facts-content {
+	width: 50%;
+	margin-top: 40px;
+}
+
+.facts .facts-content p {
+	padding-right: 10px;
+}
+
+.facts .facts-content ul {
+	list-style-type: square;
+	padding: 10px;
+	margin-top: 10px;
+	line-height: 2em;
+}
+
+.services-info-img {
+	margin-top: 40px;
+	margin-left: 20px;
+}
